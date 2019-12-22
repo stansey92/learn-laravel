@@ -57,3 +57,7 @@ Route::get('/test', function () {
 //same route as above but with a controller
 // hits the @show method on the post controller
 Route::get('/posts/{slug}', 'PostsController@show');
+
+Route::get('/contact', function() {
+    return view('contact');
+});
